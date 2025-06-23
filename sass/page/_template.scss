@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // font-size: #{$remFontSize}px;
+  scroll-behavior: smooth;
+
+  // --變更為全站
+  &.smallSize {
+    font-size: 0.938em;
+  }
+
+  &.largeSize {
+    font-size: 1.125em;
+  }
+}
+
+body {
+  min-height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: rgb(12, 8, 72);
+  background-image: url('../images/mpbgright.png'), url('../images/mpbgleft.png'), radial-gradient(ellipse 50vw 300px at 0% 50%, rgba(17, 77, 148, 1) 0%, #114d9400 100%), radial-gradient(ellipse 45vw 600px at 5% 5%, rgba(63, 178, 197, 1) 0%, rgba(63, 178, 197, 0) 100%),
+    radial-gradient(ellipse 20vw 10vw at 0% 100%, rgba(5, 30, 88, 1) 0%, rgba(5, 30, 88, 0) 100%), radial-gradient(circle 15vw at 30% 0%, rgba(255, 255, 255, 0.5) 0%, rgba(101, 68, 171, 0.1) 100%), radial-gradient(circle 45vw at 95% 95%, rgba(65, 34, 151, 1) 0%, rgba(65, 34, 151, 0) 100%),
+    linear-gradient(45deg, rgba(6, 34, 49, 1) 0%, rgba(12, 8, 72, 1) 100%);
+
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+
+  @media (max-width: 1200px) {
+    background-size: 80%, 80%, contain, contain, contain, contain, contain;
+  }
+  &.noscroll {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.row {
+  @include makeRow();
+
+  & > div {
+    box-sizing: border-box;
+  }
+}
+
+// 最外圍預設為100%
+.wrapper {
+  width: 100%;
+  margin: 0px auto;
+
+  @include screen('mobile') {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+  margin: 0 auto;
+  max-width: $containerMax; //請看_variable.scss
+  position: relative;
+  @include containerFixed;
+  // outline: 1px solid red;
+}
+
+.main {
+  position: relative;
+  margin: 0 auto 3em;
+
+  // 可先設定一個中央區塊最大寬，限制accessKey對齊
+  h2 {
+    line-height: 1.25em;
+  }
+}
+
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerPage ClassName
+.innerPage {
+  padding-top: 60px;
+  & > .container {
+    padding-top: 1em;
+    @include gutter(); //gutter 代表左右要留白
+    display: flex;
+  }
+  .centerBlock {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .leftBlock {
+    flex: none;
+    flex-basis: 260px;
+    max-width: 260px;
+    margin-right: 40px;
+    align-self: flex-start;
+    position: sticky;
+    top: 50px;
+
+    &.hidden {
+      & + .centerBlock {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+
+    & + .centerBlock {
+      flex: auto;
+      flex-basis: calc(100% - 300px);
+      max-width: calc(100% - 300px);
+    }
+
+    @include screen('tablet') {
+      display: none;
+
+      & + .centerBlock {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

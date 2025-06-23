@@ -1,0 +1,322 @@
+// 內頁標題
+h2.title {
+  font-size: 2.25em;
+  line-height: 1.25em;
+  margin: 0 0 40px;
+  color: #fff;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    position: relative;
+    &:before {
+      content: '';
+      width: 100%;
+      height: 4px;
+      background: #65cbff;
+      background: linear-gradient(90deg, rgba(101, 203, 255, 1) 0%, rgba(79, 40, 208, 1) 100%);
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+}
+h3.title {
+  font-size: 1.75rem;
+  color: #fff;
+  margin: 0 0 30px;
+}
+// 資料背景
+.dataBg {
+  background-color: rgba(4, 3, 25, 0.52);
+  border-radius: 20px 100px 20px 100px;
+  padding: 90px 100px 80px;
+  transition: 0.5s;
+  @media (max-width: 1200px) {
+    padding: 90px 50px 80px;
+  }
+  &.smallbg {
+    width: 850px;
+    padding: 80px 100px 70px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include screen('tablet') {
+      width: 100%;
+      padding: 80px 40px 70px;
+    }
+  }
+}
+// 文字顏色
+.color_pink {
+  color: #d3007e;
+}
+// 文字粗體
+.font_bold {
+  font-weight: bold;
+}
+// 文字變大
+.font_lg {
+  font-size: 1.75rem;
+}
+//按鈕100％
+.btnfull {
+  width: 100%;
+}
+
+//按鈕樣式
+.lightBtn {
+  background: #65cbff;
+  background: linear-gradient(165deg, rgba(101, 203, 255, 1) 0%, rgba(79, 40, 208, 1) 100%);
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 1.375rem;
+  font-weight: 500;
+  border: none;
+
+  &:hover {
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+}
+.darkBtn {
+  background: #336680;
+  background: linear-gradient(171deg, rgba(51, 102, 128, 1) 0%, rgba(40, 20, 105, 1) 100%);
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 1.375rem;
+  font-weight: 500;
+  border: none;
+
+  &:hover {
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+}
+.btnXl {
+  padding: 16px 50px;
+  min-width: 300px;
+}
+.btnGrp {
+  &.formInline {
+    justify-content: center;
+    .btnXl {
+      padding: 16px 40px;
+      min-width: 250px;
+    }
+  }
+  &.flexleft {
+    justify-content: flex-start;
+  }
+}
+// 說明
+.explain {
+  color: $colorLight;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  line-height: 1.3em;
+}
+.flexForm {
+  .radioGrp {
+    margin-top: -0.3em;
+  }
+}
+
+// 查詢資料
+.materialBlock {
+  display: flex;
+  flex-wrap: wrap;
+  .material_leftblock {
+    flex: 1 1 auto;
+    // flex-basis: calc(100% - 605px);
+    flex-basis: calc(100% - 32% - 40px);
+    padding-top: 68px;
+    transition: 0.5s;
+
+    .picMaterial {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 30px;
+      .picBlock {
+        flex: 0 0 auto;
+        flex-basis: 214px;
+        margin-right: 20px;
+
+        img {
+          width: 100%;
+          border: 4px solid #adb8cc;
+        }
+      }
+      .materialBlock {
+        flex: 1 1 auto;
+        .listTb {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .material_rightblock {
+    flex: 0 0 auto;
+    // flex-basis: 565px;
+    flex-basis: 32%;
+    margin-left: 40px;
+  }
+  @media (max-width: 1200px) {
+    display: block;
+    .material_leftblock {
+      padding-top: 0px;
+    }
+    .material_rightblock {
+      margin-left: 0;
+    }
+  }
+}
+//
+.listTb {
+  width: 100%;
+  margin-bottom: 30px;
+  table {
+    border-top: 1px solid #adb8cc;
+    th {
+      color: #adb8cc;
+      background-color: rgba(29, 29, 27, 0.52);
+      border-bottom: 1px solid #adb8cc;
+      padding: 20px 15px;
+      text-align: right;
+      width: 140px;
+    }
+    td {
+      border-bottom: 1px solid #adb8cc;
+      padding: 20px 15px;
+      font-weight: bold;
+    }
+  }
+}
+// 收件資料
+.receiptBlock {
+  margin: 2em 0;
+  .receiptbg {
+    background-color: rgba(4, 3, 25, 0.52);
+    border-radius: 20px 100px 20px 100px;
+    padding: 50px 50px 30px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    @media (max-width: 1200px) {
+      padding: 30px 50px;
+    }
+    .title {
+      color: #fff;
+      text-align: center;
+      font-size: 1.75em;
+      font-weight: bold;
+      margin: 0 0 30px;
+      padding: 0;
+    }
+    .flexForm {
+      display: flex;
+      .formTitle {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #adb8cc;
+      }
+      .formContent {
+        color: #fff;
+      }
+      .formGrp_block {
+        flex: 1 1 auto;
+        margin-right: 20px;
+      }
+      .formGrp_block_right {
+        flex: 0 0 auto;
+        flex-basis: 180px;
+        .formTitle {
+          margin-bottom: 10px;
+        }
+        .signbg {
+          width: 100%;
+          background-image: url('../images/sign_bg.png');
+          background-repeat: repeat;
+          background-position: 0 0;
+          padding: 40px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+          img {
+            width: 155px;
+          }
+        }
+        .btnGrp {
+          button {
+            margin: 0.3em 0;
+          }
+        }
+      }
+    }
+  }
+}
+// 檢視文件
+.viewDocument_block {
+  margin-bottom: 10px;
+  .document_group {
+    display: flex;
+    padding: 8px 20px;
+    background-color: $colorPurple;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      color: #adb8cc;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .document_audit {
+      background-color: $colorImportant;
+      color: #fff;
+      border-radius: 50px;
+      padding: 3px 12px;
+      border: 2px solid #fff;
+      font-weight: bold;
+      font-size: 1.25rem;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .document_function {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        li {
+          margin-left: 5px;
+          a {
+            width: 40px;
+            height: 40px;
+            background-color: $colorPurple;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            &:hover {
+              background-color: darken($color: $colorPurple, $amount: 10);
+            }
+          }
+        }
+      }
+    }
+  }
+  .documentcontent {
+    background-color: $colorGray;
+    padding: 8px;
+    line-height: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
