@@ -49,6 +49,9 @@ h3.title {
 .color_pink {
   color: #d3007e;
 }
+.color_lightblue {
+  color: $colorLight;
+}
 // 文字粗體
 .font_bold {
   font-weight: bold;
@@ -130,7 +133,7 @@ h3.title {
   .material_leftblock {
     flex: 1 1 auto;
     // flex-basis: calc(100% - 605px);
-    flex-basis: calc(100% - 32% - 40px);
+    flex-basis: calc(100% - 34% - 40px);
     padding-top: 68px;
     transition: 0.5s;
 
@@ -159,7 +162,7 @@ h3.title {
   .material_rightblock {
     flex: 0 0 auto;
     // flex-basis: 565px;
-    flex-basis: 32%;
+    flex-basis: 34%;
     margin-left: 40px;
   }
   @media (max-width: 1200px) {
@@ -180,7 +183,7 @@ h3.title {
     border-top: 1px solid #adb8cc;
     th {
       color: #adb8cc;
-      background-color: rgba(29, 29, 27, 0.52);
+      // background-color: rgba(29, 29, 27, 0.52);
       border-bottom: 1px solid #adb8cc;
       padding: 20px 15px;
       text-align: right;
@@ -243,6 +246,7 @@ h3.title {
           justify-content: center;
           align-items: center;
           margin-bottom: 10px;
+          border-radius: 0.2em;
           img {
             width: 155px;
           }
@@ -261,7 +265,7 @@ h3.title {
   margin-bottom: 10px;
   .document_group {
     display: flex;
-    padding: 8px 20px;
+    padding: 8px 15px;
     background-color: $colorPurple;
     align-items: center;
     justify-content: space-between;
@@ -274,10 +278,10 @@ h3.title {
       background-color: $colorImportant;
       color: #fff;
       border-radius: 50px;
-      padding: 3px 12px;
+      padding: 5px 15px;
       border: 2px solid #fff;
-      font-weight: bold;
-      font-size: 1.25rem;
+      font-weight: 500;
+      font-size: 1.125rem;
       i {
         margin-right: 5px;
       }

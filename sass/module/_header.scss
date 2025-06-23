@@ -249,7 +249,7 @@
         }
 
         &:hover {
-          box-shadow: #fff 0 0 0 2px, 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
           transform: translateY(-5px);
         }
         @include screen('tablet') {

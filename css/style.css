@@ -4104,7 +4104,7 @@ img {
     font-size: 1.25em;
   }
   .header .navigation .functionMore button:hover {
-    box-shadow: #fff 0 0 0 2px, 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
   }
   @media screen and (max-width: 991px) {
@@ -4808,7 +4808,7 @@ img {
     flex: 0 0 160px;
     align-self: flex-start;
     padding: 0.3em 0.5em;
-    color: #fff;
+    color: #adb8cc;
     text-align: right;
   }
   @media screen and (max-width: 767px) {
@@ -4854,7 +4854,7 @@ img {
     min-height: 1px;
     overflow: hidden;
     flex-wrap: wrap;
-    color: #b2ffff;
+    color: #fff;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -5886,7 +5886,7 @@ img {
   input[type=password]:focus,
   textarea:focus,
   select:focus {
-    outline: #0073e6 2px solid;
+    outline: #b2ffff 2px solid;
     outline-offset: -2px;
   }
   select {
@@ -5917,21 +5917,21 @@ img {
   }
   input[type=checkbox]:checked,
   input[type=radio]:checked {
-    border-color: #0073e6;
-    background-color: #0073e6;
+    border-color: #b2ffff;
+    background-color: #b2ffff;
   }
   input[type=checkbox]:checked {
     background-image: url(../images/basic/icon_checked.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 98%;
-    box-shadow: #0073e6 0 0 0 2px;
+    box-shadow: #b2ffff 0 0 0 2px;
     border-radius: 2px;
   }
   input[type=radio]:checked {
-    border-color: #0073e6;
-    background-color: #0073e6;
-    box-shadow: #fff 0 0 0 3px inset, #0073e6 0 0 0 2px;
+    border-color: #b2ffff;
+    background-color: #b2ffff;
+    box-shadow: rgb(4, 3, 25) 0 0 0 4px inset;
   }
   .uploadGrp {
     position: relative;
@@ -5946,21 +5946,21 @@ img {
     overflow: hidden;
     top: 10px;
     right: 0.5em;
-    background: #0073e6;
-    border: 1px solid #0073e6;
+    background: #b2ffff;
+    border: 1px solid #b2ffff;
     color: #fff;
     padding: 0.2em 1em;
     border-radius: 4px;
   }
   .uploadGrp .uploadBtn:hover {
-    background: #005ab3;
-    border: 1px solid #004080;
+    background: #7fffff;
+    border: 1px solid #4cffff;
     cursor: pointer;
     color: #fff;
     outline: none;
   }
   .uploadGrp .uploadBtn.active {
-    background: #0180ff;
+    background: #ccffff;
     cursor: pointer;
   }
   .uploadGrp .uploadBtn:hover {
@@ -6947,8 +6947,8 @@ img {
   }
   .pagination .page li.active a {
     color: #fff;
-    background: #0073e6;
-    border: #0066cd solid 1px;
+    background: #b2ffff;
+    border: #99ffff solid 1px;
   }
   .pagination .page li.last a:after, .pagination .page li.last a:before, .pagination .page li.next a:before, .pagination .page li.prev a:before, .pagination .page li.first a:after, .pagination .page li.first a:before {
     content: "";
@@ -9223,6 +9223,9 @@ img {
   .color_pink {
     color: #d3007e;
   }
+  .color_lightblue {
+    color: #b2ffff;
+  }
   .font_bold {
     font-weight: bold;
   }
@@ -9290,7 +9293,7 @@ img {
   }
   .materialBlock .material_leftblock {
     flex: 1 1 auto;
-    flex-basis: calc(68% - 40px);
+    flex-basis: calc(66% - 40px);
     padding-top: 68px;
     transition: 0.5s;
   }
@@ -9316,7 +9319,7 @@ img {
   }
   .materialBlock .material_rightblock {
     flex: 0 0 auto;
-    flex-basis: 32%;
+    flex-basis: 34%;
     margin-left: 40px;
   }
   @media (max-width: 1200px) {
@@ -9339,7 +9342,6 @@ img {
   }
   .listTb table th {
     color: #adb8cc;
-    background-color: rgba(29, 29, 27, 0.52);
     border-bottom: 1px solid #adb8cc;
     padding: 20px 15px;
     text-align: right;
@@ -9405,6 +9407,7 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    border-radius: 0.2em;
   }
   .receiptBlock .receiptbg .flexForm .formGrp_block_right .signbg img {
     width: 155px;
@@ -9417,7 +9420,7 @@ img {
   }
   .viewDocument_block .document_group {
     display: flex;
-    padding: 8px 20px;
+    padding: 8px 15px;
     background-color: #3f4173;
     align-items: center;
     justify-content: space-between;
@@ -9431,10 +9434,10 @@ img {
     background-color: #d3007e;
     color: #fff;
     border-radius: 50px;
-    padding: 3px 12px;
+    padding: 5px 15px;
     border: 2px solid #fff;
-    font-weight: bold;
-    font-size: 1.25rem;
+    font-weight: 500;
+    font-size: 1.125rem;
   }
   .viewDocument_block .document_group .document_audit i {
     margin-right: 5px;

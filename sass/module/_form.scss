@@ -99,7 +99,7 @@ select::-ms-expand {
     flex: 0 0 $formTitleWidth;
     align-self: flex-start;
     padding: 0.3em 0.5em;
-    color: #fff;
+    color: #adb8cc;
     text-align: right;
 
     @include screen('mobile') {
@@ -150,7 +150,7 @@ select::-ms-expand {
     min-height: 1px;
     overflow: hidden;
     flex-wrap: wrap;
-    color: $colorLight;
+    color: #fff;
     @include gutter();
 
     @include screen('mobile') {
@@ -1362,7 +1362,7 @@ input[type='checkbox']:checked {
 input[type='radio']:checked {
   border-color: $formFocus;
   background-color: $formFocus;
-  box-shadow: #fff 0 0 0 3px inset, $formFocus 0 0 0 2px;
+  box-shadow: rgb(4, 3, 25) 0 0 0 4px inset;
 }
 
 // input[type='radio'],
