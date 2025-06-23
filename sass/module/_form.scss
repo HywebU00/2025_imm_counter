@@ -97,8 +97,8 @@ select::-ms-expand {
   .formTitle {
     max-width: $formTitleWidth;
     flex: 0 0 $formTitleWidth;
-    align-self: flex-start;
-    padding: 0.3em 0.5em;
+    // align-self: flex-start;
+    padding: 0.5em 0.5em;
     color: #adb8cc;
     text-align: right;
 
@@ -141,7 +141,7 @@ select::-ms-expand {
 
   .formContent {
     display: flex;
-    //padding-top: 3px;
+
     max-width: calc(100% - #{$formTitleWidth});
     // flex:1 1 calc(100% - #{$formTitleWidth});
     flex: auto;
@@ -151,6 +151,7 @@ select::-ms-expand {
     overflow: hidden;
     flex-wrap: wrap;
     color: #fff;
+
     @include gutter();
 
     @include screen('mobile') {
@@ -166,8 +167,8 @@ select::-ms-expand {
       width: calc(100% - 0.6em);
     }
     .newscontent {
-      padding: 0;
-      margin: 0 0.3em 0.5em;
+      padding: 0.7em 0;
+      margin: 0 0.3em 0;
       @include screen('mobile') {
         padding: 0.5em 0 0 0;
       }
@@ -1181,7 +1182,7 @@ label,
 legend {
   // white-space: nowrap;
   display: inline-block;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0;
   @include gutter(0.6em);
 
   @include screen('xsMobile') {

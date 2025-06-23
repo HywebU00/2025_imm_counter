@@ -4806,8 +4806,7 @@ img {
   .flexForm .formTitle {
     max-width: 160px;
     flex: 0 0 160px;
-    align-self: flex-start;
-    padding: 0.3em 0.5em;
+    padding: 0.5em 0.5em;
     color: #adb8cc;
     text-align: right;
   }
@@ -4879,8 +4878,8 @@ img {
     width: calc(100% - 0.6em);
   }
   .flexForm .formContent .newscontent {
-    padding: 0;
-    margin: 0 0.3em 0.5em;
+    padding: 0.7em 0;
+    margin: 0 0.3em 0;
   }
   @media screen and (max-width: 767px) {
     .flexForm .formContent .newscontent {
@@ -5759,7 +5758,7 @@ img {
   label,
   legend {
     display: inline-block;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0;
     position: relative;
     min-height: 1px;
     padding-left: 0.3em;
