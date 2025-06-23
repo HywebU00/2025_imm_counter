@@ -101,6 +101,7 @@ select::-ms-expand {
     padding: 0.5em 0.5em;
     color: #adb8cc;
     text-align: right;
+    font-weight: bold;
 
     @include screen('mobile') {
       max-width: calc(100% - 0.6em);

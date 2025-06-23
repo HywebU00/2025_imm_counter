@@ -4809,6 +4809,7 @@ img {
     padding: 0.5em 0.5em;
     color: #adb8cc;
     text-align: right;
+    font-weight: bold;
   }
   @media screen and (max-width: 767px) {
     .flexForm .formTitle {
