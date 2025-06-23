@@ -537,8 +537,11 @@ section {
 // 首頁作業
 .jobOptions_block {
   padding-top: 150px;
+  &:has(.title) {
+    padding-top: 70px;
+  }
   .jobOptions_group {
-    width: 75%;
+    width: 60%;
     margin: 0 auto 2em;
     ul {
       display: flex;

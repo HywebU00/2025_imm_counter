@@ -8628,8 +8628,11 @@ img {
   .jobOptions_block {
     padding-top: 150px;
   }
+  .jobOptions_block:has(.title) {
+    padding-top: 70px;
+  }
   .jobOptions_block .jobOptions_group {
-    width: 75%;
+    width: 60%;
     margin: 0 auto 2em;
   }
   .jobOptions_block .jobOptions_group ul {
