@@ -8717,6 +8717,16 @@ img {
   }
   @media (max-width: 1550px) {
     .jobOptions_block .jobOptions_group {
+      width: 70%;
+    }
+  }
+  @media (max-width: 1300px) {
+    .jobOptions_block .jobOptions_group {
+      width: 85%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .jobOptions_block .jobOptions_group {
       width: 90%;
     }
   }
