@@ -110,6 +110,7 @@ h3.title {
   }
   &.flexleft {
     justify-content: flex-start;
+    margin-left: 175px;
   }
 }
 // 說明
@@ -323,4 +324,12 @@ h3.title {
       width: 100%;
     }
   }
+}
+.displayword_count {
+  text-align: right;
+  color: #7a7588;
+  font-size: 1rem;
+  position: absolute;
+  right: 40px;
+  bottom: 15px;
 }

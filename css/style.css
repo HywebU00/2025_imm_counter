@@ -5800,7 +5800,7 @@ img {
     font-size: 1em;
     border: 1px solid #e4e7f0;
     padding: 0.5em;
-    background: #fff;
+    background: #e4e7f0;
     vertical-align: middle;
     margin: 0.3em;
     box-sizing: border-box;
@@ -5866,7 +5866,7 @@ img {
     font-size: 1em;
     border: 1px solid #e4e7f0;
     padding: 0.5em;
-    background: #fff;
+    background: #e4e7f0;
     vertical-align: middle;
     margin: 0.3em;
     box-sizing: border-box;
@@ -5893,7 +5893,7 @@ img {
     line-height: 1.35em;
     padding: 0.5em 24px 0.5em 0.5em;
     border: 1px solid #e4e7f0;
-    background: #fff url(../images/icon/icon_arrow_down_dark.svg) no-repeat right 10px center;
+    background: #e4e7f0 url(../images/icon/icon_arrow_down_dark.svg) no-repeat right 10px center;
     background-size: 16px;
   }
   select option {
@@ -9276,6 +9276,7 @@ img {
   }
   .btnGrp.flexleft {
     justify-content: flex-start;
+    margin-left: 175px;
   }
   .explain {
     color: #b2ffff;
@@ -9475,6 +9476,14 @@ img {
   }
   .viewDocument_block .documentcontent img {
     width: 100%;
+  }
+  .displayword_count {
+    text-align: right;
+    color: #7a7588;
+    font-size: 1rem;
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
   }
 }
 .colorA a:hover {

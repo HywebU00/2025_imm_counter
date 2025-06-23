@@ -196,13 +196,26 @@
                         <div class="formGrp">
                           <label for="" class="formTitle">收件意見</label>
                           <div class="formContent">
-                            <textarea name="" id="address" cols="30" rows="10" placeholder="最多可輸入170個中英文字"></textarea>
-                            <div class="btnGrp flexleft">
-                              <button type="button" class="darkBtn">查詞庫</button>
-                            </div>
+                            <textarea name="" id="myTextarea" oninput="limitTextareaLength(this, 170)" maxlength="170" cols="30" rows="10" placeholder="最多可輸入170個中英文字"></textarea>
+                            <div class="displayword_count" id="textLength">0/170</div>
+                            <script>
+                              function limitTextareaLength(element, maxLength) {
+                                let text = element.value;
+                                let currentLength = text.length;
+                                let textLengthDiv = document.getElementById('textLength');
+
+                                if (currentLength > maxLength) {
+                                  element.value = text.slice(0, maxLength);
+                                  currentLength = maxLength;
+                                }
+                                textLengthDiv.textContent = currentLength + "/" + maxLength;
+                              }
+                            </script>
                           </div>
                         </div>
-
+                        <div class="btnGrp flexleft">
+                          <button type="button" class="darkBtn">查詞庫</button>
+                        </div>
                       </div>
                       <div class="formGrp_block_right">
                         <div class="formTitle">申請人簽名</div>
